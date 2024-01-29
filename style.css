@@ -1,0 +1,237 @@
+
+*{
+margin: 0;
+padding: 0;
+font-family: 'poppins','sans-serif';
+box-sizing: border-box; 
+}
+#header{
+background-position: right;
+background-repeat: no-repeat;
+background-size:45%;
+height: 800px;
+background-image: url("https://www.pngitem.com/pimgs/m/220-2208159_smiling-woman-transparent-background-hd-png-download.png");
+margin-top: 0;
+margin-bottom: 50px;
+border-radius: 30px;
+}
+.container{
+padding: 10px 9%;
+} 
+nav{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+
+}
+.logo{
+width: 150px;
+}
+nav ul li{
+display: inline-block;
+list-style: none;
+margin: 9px;
+
+}
+
+nav ul li a{
+color:black;
+text-decoration: none;
+position: relative;
+font-size: 20px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav ul li a::after{
+content:'';
+width: 0;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -6px;
+transition: 0.05s;
+}
+nav ul li a:hover::after{
+width: 100%;
+}
+
+.details{
+margin-top: 15%;
+}
+.welcome{
+text-transform: capitalize;
+font-weight: bold;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 45px;
+color: rgba(209, 123, 3, 0.863);
+font-style: italic;
+margin-left: 50px;
+}  
+h2{
+margin-left: 100px; 
+font-size: 38px;
+color: rgb(229, 14, 14);
+font-family: Arial, Helvetica, sans-serif;
+margin-top:20px ;
+font-weight: bold;
+}
+span{
+color: #270bff;
+}
+h3,h4{
+margin-left: 100px; 
+font-size: 20px;
+color: rgb(0, 165, 3);
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 20px;
+
+}
+/*------------about------*/
+#about{
+padding: 80px 0;
+
+}
+p{
+font-size: 16px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.row{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.abt-col-1{
+flex-basis: 35%;
+}
+.abt-col-1 img{
+width: 100%;
+border-radius: 30px;
+}
+.abt-col-2 {
+flex-basis: 62%;
+}
+.subtitle {
+font-size: 40px;
+font-weight: 700;
+color: black;
+}
+.tab-title {
+display: flex;
+margin: 20px 0 40px;
+}
+.tab-links {
+margin-right: 50px;
+font-size: 20px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+}
+.tab-links::after {
+content: '';
+width: 0;
+height: 3px;
+background: #ff004f;
+position: absolute;
+left: 0;
+bottom: -8px;
+transition: 0.5s;
+}
+.tab-links.active-link::after {
+width: 50%;
+}
+.tab-contents ul li {
+list-style: none;
+margin: 10px 0;
+}
+.tab-contents ul li span {
+color: #270bff;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: italic;
+font-size: 17px;
+}
+.tab-contents {
+display: none;
+}
+.tab-contents.active-tab {
+display: block;
+}
+form{
+margin-left: 50px;
+}
+button{
+background-color: #aff328;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+color:rgb(28, 13, 232);
+font-weight: bold;
+cursor: pointer;
+
+} 
+button a{
+text-decoration: none;
+list-style: none;
+} 
+.contact-right{
+margin-left: 800px;
+width: 700px;
+border: 2px solid rebeccapurple;
+margin-top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 20px;
+height: 300px;
+margin-bottom: 20px;
+} 
+form input,textarea{
+height: 30px;
+width: 500px;
+border-color: aqua;
+border: 2px solid cyan;
+font-weight: bold;
+}
+button:hover{
+background-color: aqua;
+color: black;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+}
+/* contact form */
+.contact{
+        box-sizing: border-box;
+    }
+    .contact-container {
+        width: 100%; /* Set to 100% to take full width */
+        max-width: 600px; 
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        float: right; /* Align to the left side */
+        margin-right: 20px; /* Add some margin for spacing */
+        padding-right: 50px; 
+    }
+    .contact-container label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px; /* Adjust the font size as needed */
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    .contact-container button {
+        background-color: #6fe7f7;
+        color: #000000;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        width: 100%;
+    }
